@@ -1,0 +1,23 @@
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: white;
+  display: block;
+}
+
+.inline {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: white;
+  display: inline;
+}
+
+.inline-block {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: white;
+  display: inline-block;
+}
