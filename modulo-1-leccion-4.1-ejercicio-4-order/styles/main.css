@@ -1,0 +1,46 @@
+* {
+  margin-left: 10px;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item {
+  margin: 0px;
+  border: 1px solid darkviolet;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.photo {
+  width: 95%;
+}
+
+.item-1 {
+  flex-grow: 1;
+}
+
+.item-2 {
+  flex-grow: 1;
+}
+
+.item-3 {
+  flex-grow: 1;
+}
+
+.item-4 {
+  flex-grow: 1;
+}
+
+.item-5 {
+  order: -1;
+  flex-grow: 2;
+}

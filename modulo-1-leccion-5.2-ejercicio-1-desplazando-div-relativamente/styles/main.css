@@ -1,0 +1,42 @@
+.madre {
+  height: 1000px;
+  width: 1000px;
+  background-color: bisque;
+  border: black solid 1px;
+}
+
+.div1 {
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  padding: 30px;
+  background-color: #155;
+  position: relative;
+  border: black solid 1px;
+  left: 100px;
+  top: 50px;
+}
+
+.div2 {
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  padding: 30px;
+  background-color: #900;
+  position: relative;
+  border: black solid 1px;
+  right: 150px;
+  bottom: 240px;
+}
+
+.div3 {
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  padding: 30px;
+  background-color: #750;
+  position: relative;
+  border: black solid 1px;
+  left: 180px;
+  bottom: 240px;
+}

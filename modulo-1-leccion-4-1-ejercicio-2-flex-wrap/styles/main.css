@@ -1,0 +1,20 @@
+.container {
+  width: 410px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 50px;
+  border: 1px solid darkviolet;
+  background: lightpink;
+  text-align: center;
+  box-sizing: border-box;
+}

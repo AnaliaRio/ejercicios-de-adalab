@@ -1,0 +1,7 @@
+.header {
+  background-color: blueviolet;
+  color: aliceblue;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
