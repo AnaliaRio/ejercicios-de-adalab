@@ -1,0 +1,57 @@
+/* MINI RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --colorFire: #cc212a;
+}
+
+/* MAIN */
+.main {
+  height: 100vh;
+  /* Para ocupar el alto de la pantalla se usa vh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorFire);
+}
+
+/* FOOTER */
+.footer {
+  position: sticky;
+  /* Con sticky el footer siempre está visible */
+  bottom: 0;
+  /* Con position es imprescindible indicar top/bottom */
+  border-top: 3px solid var(--colorFire);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--colorFire);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(-50%);
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 780px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .icon {
+    transform: none;
+  }
+}
