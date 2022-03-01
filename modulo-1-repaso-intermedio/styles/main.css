@@ -36,11 +36,19 @@
 .icon {
   width: 50px;
   height: 50px;
+  /* alto y ancho iguales para que sea un cuadrado */
+
   background-color: var(--colorFire);
+
   border-radius: 50%;
+  /* border-radius:50% convierte un cuadrado en un círculo */
+
   text-align: center;
   line-height: 50px;
+  /* se hace coincidir la altura de la línea con la del elemento en el que se encuetra para que usando text-align el texto se centre verticalmente */
+
   transform: translateY(-50%);
+  /* Mueve elemento hacia arriba (eje Y es vertical) el 50% de su tamaño.*/
 }
 
 /* MEDIA QUERIES */
