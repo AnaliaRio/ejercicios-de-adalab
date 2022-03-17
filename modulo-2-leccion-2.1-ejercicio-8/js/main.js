@@ -1,13 +1,11 @@
 // Obtenemos el elemento con el que queremos trabajar usando document.querySelector()
 
-const ulElement = document.querySelector(".ul");
+const btn2Element = document.querySelector(".btn2");
 
 
-// Declaramos el contenido que queremos añadir
+// Declaramos la clase que queremos añadir
 
-const content = '<li>1</li><li>2</li><li>3</li>';
+btn2.classList.add("disable");
 
-// Asignamos el contenido creado al ul
 
-ulElement.innerHTML = content;
-
+// Crear dos botones sencillos con los mismos estilos (padding, borde, color) y, usando JavaScript, al segundo añadirle una clase para que parezca que está desactivado (por ejemplo, aplicarle una opacidad menor)
