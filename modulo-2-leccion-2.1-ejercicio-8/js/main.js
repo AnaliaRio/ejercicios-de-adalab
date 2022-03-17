@@ -1,3 +1,5 @@
+"use strict";
+
 // Obtenemos el elemento con el que queremos trabajar usando document.querySelector()
 
 const btn2Element = document.querySelector(".btn2");
