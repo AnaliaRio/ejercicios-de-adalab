@@ -1,14 +1,17 @@
-.disable {
-  opacity: 20%;
+.success {
+  border: 2px solid darkgreen;
+  background-color: lightgreen;
+  color: darkgreen;
 }
 
-.btn {
-  font-weight: 600;
-  font-size: larger;
-  color: #fff;
-  background-color: orchid;
-  border: solid darkorchid 2px;
-  padding: 30px 70px;
-  margin: 10px;
-  border-radius: 20%;
+.error {
+  border: 2px solid darkred;
+  background-color: lightpink;
+  color: darkred;
+}
+
+.warning {
+  border: 2px solid darkgoldenrod;
+  background-color: lightgoldenrodyellow;
+  color: darkgoldenrod;
 }

@@ -1,23 +1,30 @@
 "use strict";
 
-"use strict";
+// Crea un div que contenga un título "NOTIFICACIÓN" y un texto "Mensaje por defecto".
+// Crea también tres clases:
+// La primera, .success, aplicará un borde verde oscuro, un fondo verde claro y el color de fuente verde oscuro
+// La segunda, .error, igual pero sustituyendo el verde por rojo
+// La tercera, .warning, lo mismo pero usando el color amarillo
 
-// avatar por defecto
-const DEFAULT_AVATAR = "http://placehold.it/300x300";
-// avatar que eligió el usuario al registrarse
-let userAvatar = "http://www.fillmurray.com/300/300";
+// Si contiene la clase warning, el título sea 'AVISO' y el texto sea: 'Tenga cuidado'
 
-// Obtenemos el elemento con el que queremos trabajar usando document.querySelector()
-const userAvatar = document.querySelector(".user__avatar");
+// Si contiene la clase error, el título sea 'ERROR' y el texto sea: 'Ha surgido un error'
 
+// Si contiene la clase success, el título sea 'CORRECTO' y el texto sea: 'Los datos son correctos'
 
+// Cambia la clase en HTML y comprueba que el código de JavaScript funciona.
 
+const success = document.querySelector(".success");
+const error = document.querySelector(".error");
+const warning = document.querySelector(".warning");
+// const div = document.querySelector("div");
 
-// Paso a paso:
-// Hagamos la lógica para añadir, desde javascript, la imagen userAvatar a la etiqueta de HTML img.
-// Ahora vamos a plantear que userAvatar pueda no contener una URL porque, por ejemplo, cuando el usuario se registró no encontraba ninguna foto molona y decidió que la subiría en otro momento. Para ello tenemos que cambiar el contenido de userAvatar a comillas vacías let userAvatar = '';. ¡Ahora no debería verse ninguna imagen en la página!
-// Vamos a mejorar nuestro programa para que la ficha de usuario tenga una imagen sí o sí, de manera que:
-// si tenemos el avatar del usuario se muestre este.
-// si no tenemos datos del avatar del usuario, se muestre el avatar por defecto
-// NOTA: En este ejercicio aún no vamos a usar condicionales if/else, tenemos que apoyarnos en el operador OR para asignar al atributo src de la etiqueta img un valor u otro ;)
-// NOTA: Cambia manualmente el valor de userAvatar ('http://www.fillmurray.com/300/300' o '') para comprobar que el programa funcionará para los usuarios que añadieron su foto y para los que no lo hicieron.
+if (div.classList.contains("warning"))
+{div.innerHTML = `<p>AVISO</p>`}
+
+else if (div.classList.contains("error"))
+{div.innerHTML = `<p>ERROR</p>`}
+
+else if (div.classList.contains("sucess"))
+{div.innerHTML = `<p>CORRECTO</p>`}
+
