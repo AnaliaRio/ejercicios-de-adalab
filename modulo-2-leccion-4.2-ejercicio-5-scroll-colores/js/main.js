@@ -14,11 +14,15 @@ const div = document.querySelector('.div')
 window.addEventListener("scroll", () => {
   if (window.scrollY>250) {
       div.classList.add("pink");
+      div.classList.remove("blue");
+
   } else  {
       div.classList.add("blue");
+      div.classList.remove("pink");
     }
   }
 )
+
 
 // const [red, green, blue] = [69, 111, 225]
 

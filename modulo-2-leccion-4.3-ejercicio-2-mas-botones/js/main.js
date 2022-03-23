@@ -9,11 +9,11 @@ const button2 = document.querySelector(".button2");
 // listener sobre elementos, con tipo de evento y el código a ejecutarse
   button1.addEventListener('click', function handleClick(event) {
     event.target.classList.add("button");
+    button2.classList.remove("button");
   });
   
   button2.addEventListener('click', function handleClick(event) {
     event.target.classList.add("button");
+    button1.classList.remove("button");
   });
-
-  // No consigo que no se le pueda aplicar el estilo a los dos a la vez
   
