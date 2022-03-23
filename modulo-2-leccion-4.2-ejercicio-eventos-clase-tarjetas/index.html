@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Eventos - Tarjetas</title>
+  </head>
+
+  <body class="page">
+      <h1 class="title--big">Eventos</h1>
+      <main class="page col2">
+        <div>
+          <h2>Dime tu nombre y apellido</h2>
+          <form class="col2">
+            <input class="js-name" type="text" name="name" id="name" placeholder="Nombre..." />
+            <input class="js-lastName" type="text" name="lastname" id="lastname" placeholder="Apellidos..." />
+            <input class="js-button" type="button" value="Generar" />
+          </form>
+        </div>
+    
+        <div class="card">
+          <h4 class="card__title">Nombre completo</h4>
+          <div class="js-result"></div>
+        </div>
+    
+        <section class="card cardPreview">
+          <h4 class="card__title js-title">
+            Nombre Apellidos
+          </h4>
+          <p class="card__description js-last ">
+            Developer
+          </p>
+        </section>
+      </main>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+  </body>
+</html>
