@@ -9,10 +9,10 @@
 // Nota: Prepara un HTML con varios elementos para poder probarla.
 
 
-function getEl(a) {
-    const btnEl = getEl(".btn");
-
-    return result;
+function getEl(selector) {
+    const element = document.querySelector(selector);
+    return element;
 };
 
-// No sé cómo "probar" que funciona
+const title = getEl(".title");
+const paragraph = getEl(".paragraph");
