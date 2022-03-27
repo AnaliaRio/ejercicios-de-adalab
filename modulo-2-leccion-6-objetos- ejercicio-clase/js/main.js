@@ -32,7 +32,7 @@
         return clientData;
     }
 
-    function paintHTML (client) {
+    function paintHTML (clientInfo) {
         table.innerHTML += `<tr>
         <td>${client.id}</td>
         <td>${client.name}</td>
