@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.amarilloCorrecto {
+  background-color: #fc0;
+}
+
+.naranjaFuegoChileno {
+  background-color: #f90;
+}
