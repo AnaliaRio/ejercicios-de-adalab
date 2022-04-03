@@ -8,17 +8,21 @@
 
 function getGithubInfo() {
   // const input = document.querySelector('.js-input');
-  fetch('https://api.github.com/users/)
+  fetch(`https://api.github.com/users/${input.value}`)
     .then((response) => response.json())
     .then((data) => {
+
       const name = document.querySelector('.js-name');
       const repoNo = document.querySelector('.js-repono');
       const img = document.querySelector('.js-img');
-      name.src = data.name;
-      repoNo.src = data.repos_url;
+
+      name.innerHTML = data.login;
+      repoNo.innerHTML = data.public_repos;
       img.src = data.avatar_url;
+      img.alt = 'GitHub User'
     });
 }
 
 const btn = document.querySelector('.js-search');
+const input = document.querySelector ('.js-input');
 btn.addEventListener('click', getGithubInfo);
