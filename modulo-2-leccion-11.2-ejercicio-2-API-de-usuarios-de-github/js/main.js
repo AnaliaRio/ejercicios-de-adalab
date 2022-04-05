@@ -20,7 +20,7 @@ function getGithubInfo() {
       repoNo.innerHTML = data.public_repos;
       img.src = data.avatar_url;
       img.alt = 'GitHub User'
-    });
+  });
 }
 
 const btn = document.querySelector('.js-search');

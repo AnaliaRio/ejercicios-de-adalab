@@ -15,10 +15,10 @@ const items = [
 //   Escribid un script que recorra los datos de este array y pinte en consola por cada elemento: "El dato VALOR está en la posición X y es de tipo TIPO".
 // Por ejemplo "El dato Ada está en la posición 0 y es de tipo string".
 
-Array.isArray(items);
 
-for(const adalaber of items){
-    console.log{
-        "El dato " + items[0] + "está en la posición " 
-    }
+for (let i = 0; i < items.length; i++) {
+    const valor = items[i];
+    const tipo = typeof items[i]; 
+
+    console.log(`El dato ${valor} está en la posición ${i} y es de tipo ${tipo}`);
 }
