@@ -1,15 +1,26 @@
 import '../styles/App.scss';
+import {useState} from 'react'; // Esto es importar una librería
+
 
 function App() {
-  const handleInput = (ev) => {
-    console.log('la última letra pulsada es:', ev.key);
-  };
+
+  let [count, setCount] = useState(0);
+  const [classDark, setClassDark] = useState('');
+
+  const handleClickBtn = (ev) => {
+    ev.preventDefault();
+    setCount(count + 1);
+    classDark === 'dark' ? setClassDark('red') : setClassDark('dark');
+  }
 
   return (
-    <form>
-      <label>Escribe:</label>
-      <input type="text" onKeyUp={handleInput} />
-    </form>
+    <div className = {`App ${classDark}`}>
+      <h1>Contador</h1>
+      <form action="">
+        <input type="text" value= {count}/>
+        <button onClick={handleClickBtn}>Incrementar</button>
+      </form>
+    </div>
   );
 }
 

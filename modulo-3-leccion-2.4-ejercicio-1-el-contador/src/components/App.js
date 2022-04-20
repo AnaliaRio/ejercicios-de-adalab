@@ -1,19 +1,45 @@
 import '../styles/App.scss';
+import {useState} from 'react'; // Esto es importar una librería
 
+let number = 5;
+
+// Función principal
 function App() {
-  const handleInput = (ev) => {
-    console.log('la última letra pulsada es:', ev.key);
-  };
+
+  //Tiene que ser una variable para que vaya sumando.
+  // let count = 0;
+
+  // Hay que meter let count en una variable de estado. Para ello se importar useState en línea 2.
+
+  const [count, setCounter] = useState(0);
+
+  const handleClickBtn =(ev)=>{
+    ev.preventDefault();
+    number++;
+    console.log(number);
+    setCounter(count + 1);
+    // console.log(count);
+  }
 
   return (
-    <form>
-      <label>Escribe:</label>
-      <input type="text" onKeyUp={handleInput} />
-    </form>
+    <div>
+      <h1>Contador</h1>
+      <form>
+        <input type="text" value={count}/>
+        <button onClick={handleClickBtn}>Incrementar</button>
+      </form>
+
+
+    </div>
   );
 }
 
+// Export
 export default App;
+
+
+
+
 
 /*Vamos a crear un contador incremental. Para ello necesitamos combinar lo que hemos aprendido sobre el estado y los eventos de React. Sigue los siguientes pasos:
 Crea un nuevo proyecto a partir de tu React Starter Kit.
